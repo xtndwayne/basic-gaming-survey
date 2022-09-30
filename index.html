@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>PC Gamers Survey</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <h1 id="title">PC Gamer's Survey</h1>
+        <p id="description">Thank you for taking the time to fill up the PC Gamer's Survey, this will give us more
+            information on what PC
+            Gamers preference on peripherals and what type of machine they are currently using on their battlestations.
+        </p>
+    </header>
+    <form action="" id="survey-form">
+        <!--1ST FIELDSET-->
+        <fieldset>
+            <label for="name-label">Name <input type="text" id="name" name="name" placeholder="Enter your name"></label>
+            <label for="email-label">Email <input type="email" id="email" name="email" placeholder="Enter your Email"
+                    required> </label>
+            <label for="age-label">Age (optional) <input type="number" id="age" name="age" placeholder="age"
+                    min="5"></label>
+        </fieldset>
+        <!--2ND FIELDSET-->
+        <fieldset>
+            <!--SELECTBOX-->
+            <label for="type-label">Which type of PC Gamer best describes you?
+                <select name="type-gamer" id="type-gamer">
+                    <option value="1">Select One</option>
+                    <option value="2">Browser Gamer</option>
+                    <option value="3">Casual PC Gamer</option>
+                    <option value="4">Bought a Gaming PC for the sake of playing Valorant</option>
+                    <option value="5">Sim Racer</option>
+                    <option value="6">FPS Gamer(Apex Legends, Warzone, CSGO etc ...)</option>
+                    <option value="7">Streamer (Twich, Youtube, Facebook, pornhub..)</option>
+                    <option value="8">Esports Player</option>
+                    <option value="9">Hardcore Gamer (no life whatsoever!)</option>
+                </select>
+            </label>
+            <label for="type-pc"> What best describes your PC Specs?</label>
+            <label for="com-shop"><input type="radio" id="com-shop" class="inline" name="pc-specs" value="verylow">Comp
+                Shop</label>
+            <label for="potato"><input type="radio" id="potato" class="inline" name="pc-specs" value="low">Potato
+                PC</label>
+            <label for="mid"><input type="radio" id="mid" class="inline" name="pc-specs" value="mid">Mid-Level
+                PC</label>
+            <label for="high"><input type="radio" id="high" class="inline" name="pc-specs" value="high">High-End Gaming
+                PC</label>
+            <label for="extreme"><input type="radio" id="extreme" class="inline" name="pc-specs" value="4k">Ray Tracing
+                Capable 4K
+                120 FPS Gaming PC</label>
+            <label for="nasa"><input type="radio" id="nasa" class="inline" name="pc-specs" value="nasa">NASA Gaming
+                PC</label>
+            <!--CHECKBOX-->
+            <label for="list-games">Select all the PC Titles here that you have played before or currently
+                playing</label>
+            <label for="apex"><input type="checkbox" id="apex" value="1" class="inline">Apex Legends</label>
+            <label for="csgo"><input type="checkbox" id="csgo" value="2" class="inline">Counter Strike: Global
+                Offensive</label>
+            <label for="cbpunk"><input type="checkbox" id="cbpunk" value="3" class="inline">Cyberpunk: 2077</label>
+            <label for="dota"><input type="checkbox" id="dota" value="4" class="inline">DOTA 2</label>
+            <label for="lol"><input type="checkbox" id="lol" value="5" class="inline">Leage of Legends</label>
+            <label for="roblox"><input type="checkbox" id="roblox" value="6" class="inline">Roblox</label>
+            <label for="mc"><input type="checkbox" id="mc" value="7" class="inline">Minecraft</label>
+            <label for="metro"><input type="checkbox" id="metro" value="8" class="inline">Metro Exodus</label>
+            <label for="valo"><input type="checkbox" id="valo" value="9" class="inline">Valorant</label>
+            </label>
+            <label for="describe">Describe your most favourite PC Game without having to tell the title or main
+                characteer <textarea id="describe" name="describe" rows="6" cols="30"
+                    placeholder="describe your game here..."></textarea>
+            </label>
+        </fieldset>
+        <input type="submit" value="Submit" />
+    </form>
+</body>
+
+</html>
